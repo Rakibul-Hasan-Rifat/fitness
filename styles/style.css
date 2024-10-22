@@ -41,7 +41,7 @@ body {
 }
 
 .btn {
-  padding: 01rem 2.5rem;
+  padding: .8rem 3rem;
   border-radius: 2rem;
   font-size: 1.1rem;
   cursor: pointer;
@@ -69,6 +69,10 @@ h4 {
   margin-bottom: 0.6rem;
   font-size: 1.25rem;
   color: #fff;
+}
+
+.section_subtitle {
+  margin-bottom: 1.5rem;
 }
 
 /* header styles */
@@ -255,9 +259,61 @@ header .banner {
   border-radius: 0.8rem;
 }
 
+/* .bmi_calculator_sect styles */
+.bmi_calculator_sect {
+  background-color: #222;
+  padding: 3rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+}
+
+table,
+th,
+td {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 1rem 1.5rem;
+}
+
+td {
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.bmi_calculator {
+  max-width: 600px;
+  margin-left: 5rem;
+}
+
+.bmi_form div {
+  margin: 1.5rem 0;
+  display: grid;
+  gap: .6rem;
+  grid-template-columns: 1fr 1fr;
+}
+
+.input_fields_container input,
+.input_fields_container select {
+  color: #fff;
+  border-radius: .5rem;
+  padding: 0.8rem;
+  background-color: rgba(255, 255, 255, .1);
+  border: none;outline: none;
+}
+
+.input_fields_container select[name="activity"] {
+  grid-column: 1 / span 2;
+}
+
 /* .meat_team_section styles */
 .meat_team {
-  background-color: rgba(255, 255, 255, 0.1);
   border-radius: 1.1rem;
   padding: 1.5rem;
   text-align: center;
@@ -266,8 +322,11 @@ header .banner {
 .meat_team .team_member_container {
   margin-top: 2.5rem;
   display: grid;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  border-radius: 1.5rem;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .team_member_container .team_member {

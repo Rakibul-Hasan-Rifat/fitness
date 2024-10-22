@@ -10,6 +10,7 @@
     ></script>
     <link rel="stylesheet" href="styles/style.css" />
   </head>
+
   <body>
     <header class="container">
       <nav>
@@ -97,41 +98,102 @@
       <section class="extra_miles">
         <div class="extra_mile_text">
           <h2 class="section_title">Run an Extra Mile Easily</h2>
-          <p class="desc">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. With hundreds of professional workouts.</p>
+          <p class="desc">
+            We believe fitness should be accessible to everyone, everywhere,
+            regardless of income or access to a gym. With hundreds of
+            professional workouts.
+          </p>
           <button class="btn">Join Now</button>
         </div>
         <div class="extra_mile_image">
-            <img src="./images/run.jpg" alt="">
+          <img src="./images/run.jpg" alt="" />
+        </div>
+      </section>
+      <section class="bmi_calculator_sect">
+        <div class="bmi_chart">
+          <h2 class="section_subtitle">BMI Calculator Chart</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>BMI</th>
+                <th>Weight Loss</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Below 18.5</td>
+                <td>Underweight</td>
+              </tr>
+              <tr>
+                <td>18.5 - 24.9</td>
+                <td>Healthy</td>
+              </tr>
+              <tr>
+                <td>25.0 - 29.9</td>
+                <td>Overweight</td>
+              </tr>
+              <tr>
+                <td>30.0 - above</td>
+                <td>Obese</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="bmi_calculator">
+          <h2 class="section_subtitle">Calculate your BMI</h2>
+          <p class="desc">
+            We believe fitness should be accessible to everyone, everywhere,
+            regardless of income or access to a gym.
+          </p>
+          <form class="bmi_form">
+            <div class="input_fields_container">
+              <input type="text" placeholder="Height/cm" />
+              <input type="text" placeholder="Weight/kg" />
+              <input type="text" placeholder="Age" />
+              <select name="" id="">
+                <option value="gender" disabled selected>Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+              </select>
+              <select name="activity" id="">
+                <option value="activity">Select activity factor</option>
+              </select>
+            </div>
+            <button class="btn">Calculate</button>
+          </form>
         </div>
       </section>
       <section class="meat_team">
         <h2 class="section_title">Meat Our Team</h2>
-        <p class="desc">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</p>
+        <p class="desc">
+          We believe fitness should be accessible to everyone, everywhere,
+          regardless of income or access to a gym.
+        </p>
         <div class="team_member_container">
-            <div class="team_member">
-                <h4>Jerome Bell</h4>
-                <p class="desc"><small>Trainer</small></p>
-            </div>
-            <div class="team_member">
-                <h4>Cameron Williamson</h4>
-                <p class="desc"><small>Trainer</small></p>
-            </div>
-            <div class="team_member">
-                <h4>Darrell Steward</h4>
-                <p class="desc"><small>Trainer</small></p>
-            </div>
-            <div class="team_member">
-                <h4>Dianne Russell</h4>
-                <p class="desc"><small>Trainer</small></p>
-            </div>
-            <div class="team_member">
-                <h4>Cody Fisher</h4>
-                <p class="desc"><small>Trainer</small></p>
-            </div>
-            <div class="team_member">
-                <h4>Theresa Webb</h4>
-                <p class="desc"><small>Trainer</small></p>
-            </div>
+          <div class="team_member">
+            <h4>Jerome Bell</h4>
+            <p class="desc"><small>Trainer</small></p>
+          </div>
+          <div class="team_member">
+            <h4>Cameron Williamson</h4>
+            <p class="desc"><small>Trainer</small></p>
+          </div>
+          <div class="team_member">
+            <h4>Darrell Steward</h4>
+            <p class="desc"><small>Trainer</small></p>
+          </div>
+          <div class="team_member">
+            <h4>Dianne Russell</h4>
+            <p class="desc"><small>Trainer</small></p>
+          </div>
+          <div class="team_member">
+            <h4>Cody Fisher</h4>
+            <p class="desc"><small>Trainer</small></p>
+          </div>
+          <div class="team_member">
+            <h4>Theresa Webb</h4>
+            <p class="desc"><small>Trainer</small></p>
+          </div>
         </div>
       </section>
     </main>
