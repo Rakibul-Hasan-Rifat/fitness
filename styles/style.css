@@ -528,6 +528,30 @@ hr {
     align-items: center;
   }
 
+  .chart_calculator_container {
+    flex-direction: column;
+    padding: 3rem 1rem;
+    gap: 2.5rem;
+    /* align-items: stretch; */
+  }
+
+  .bmi_calculator {
+    margin-left: 0;
+    padding: 0 2.5rem;
+  }
+
+  .bmi_calculator .desc {
+    text-align: justify;
+  }
+
+  .bmi_form div {
+  }
+
+  .input_fields_container input,
+  .input_fields_container select {
+    min-width: 7rem;
+  }
+
   footer > div {
     text-align: center;
     grid-template-columns: 1fr;
