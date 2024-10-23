@@ -15,9 +15,8 @@ html {
 body {
   max-width: 1440px;
   margin: 0 auto;
-  font-family: "Inter", serif;
   background-color: #000;
-  /* font-size: 16px; */
+  font-family: "Inter", serif;
 }
 
 /* common styles */
@@ -117,8 +116,11 @@ nav .link_container {
 }
 
 nav .small_device_icon {
+  color: #fff;
   display: none;
 }
+
+
 
 /* .banner styles */
 header .banner {
@@ -465,6 +467,14 @@ hr {
 
   .btn {
     font-size: 0.8rem;
+  }
+
+  nav .link_container {
+    display: none;
+  }
+
+  nav .small_device_icon {
+    display: block;
   }
 
   .banner {
