@@ -210,7 +210,8 @@ header .banner {
 
 .change_habits .habit_card_container {
   margin-top: 3.5rem;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 3rem;
   align-items: center;
   justify-content: space-between;
@@ -445,6 +446,14 @@ hr {
     flex-direction: column;
   }
 
+  .change_habits .habit_card_container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .habit_card img {
+  width: 75%;
+}
+
   /* .banner_text .banner_title {
     font-size: 3rem;
   } */
@@ -496,9 +505,18 @@ hr {
   .blur_item:first-child h2 {
     font-size: 1.5rem;
   }
+
   .blur_item:last-child h3 {
     font-size: 1.1rem;
   }
+
+  .change_habits .habit_card_container {
+    grid-template-columns: 1fr;
+  }
+
+.habit_card img {
+  width: 60%;
+}
 
   footer > div {
     text-align: center;
