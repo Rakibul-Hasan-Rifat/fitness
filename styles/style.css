@@ -544,7 +544,9 @@ hr {
     text-align: justify;
   }
 
-  .bmi_form div {
+  .meat_team .team_member_container {
+    margin: 3rem 1rem;
+    grid-template-columns: 1fr;
   }
 
   .input_fields_container input,
