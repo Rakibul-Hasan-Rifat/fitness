@@ -41,7 +41,7 @@ body {
 }
 
 .btn {
-  padding: .8rem 3rem;
+  padding: 0.6rem 3rem;
   border-radius: 2rem;
   font-size: 1.1rem;
   cursor: pointer;
@@ -229,14 +229,14 @@ header .banner {
 
 /* .extra_miles_section styles */
 .extra_miles {
-  margin: 3rem 0;
+  margin: 3rem 6rem;
   display: flex;
   gap: 7rem;
   align-items: center;
   justify-content: space-between;
   background-color: #222;
   border-radius: 1.1rem;
-  padding: 2rem;
+  padding: 1.5rem;
 }
 
 .extra_mile_text {
@@ -249,24 +249,36 @@ header .banner {
 }
 
 .extra_mile_image {
-  width: 60%;
+  width: 100%;
   text-align: right;
+  max-width: 450px;
+  overflow: hidden;
+  border-radius: 0.8rem;
 }
 
 .extra_mile_image img {
   width: 100%;
   object-fit: contain;
-  border-radius: 0.8rem;
+  object-position: top right;
+  transform: scale(2.5);
+  transform-origin: 70% 30%;
+  zoom: 150%;
 }
 
 /* .bmi_calculator_sect styles */
 .bmi_calculator_sect {
+  color: #fff;
+}
+
+.bmi_calculator_sect > div:first-child {
+  text-align: center;
+}
+
+.chart_calculator_container {
   background-color: #222;
-  padding: 3rem 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: #fff;
 }
 
 table,
@@ -293,19 +305,20 @@ td {
 }
 
 .bmi_form div {
-  margin: 1.5rem 0;
+  margin: 1.1rem 0;
   display: grid;
-  gap: .6rem;
+  gap: 0.6rem;
   grid-template-columns: 1fr 1fr;
 }
 
 .input_fields_container input,
 .input_fields_container select {
   color: #fff;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   padding: 0.8rem;
-  background-color: rgba(255, 255, 255, .1);
-  border: none;outline: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+  outline: none;
 }
 
 .input_fields_container select[name="activity"] {
@@ -315,7 +328,7 @@ td {
 /* .meat_team_section styles */
 .meat_team {
   border-radius: 1.1rem;
-  padding: 1.5rem;
+  /* padding: 1.5rem; */
   text-align: center;
 }
 
@@ -323,7 +336,8 @@ td {
   margin-top: 2.5rem;
   display: grid;
   gap: 1.5rem;
-  padding: 1.5rem;
+  padding: 1.3rem;
+  margin: 3rem 6rem;
   border-radius: 1.5rem;
   grid-template-columns: repeat(3, 1fr);
   background-color: rgba(255, 255, 255, 0.1);
@@ -340,6 +354,11 @@ td {
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-end;
+  box-shadow: 2px 1px 3px rgba(255, 255, 255, 0.1);
+
+  &:hover {
+    transform: scale(1.03);
+  }
 }
 
 .team_member_container .team_member:nth-child(1) {
@@ -365,4 +384,50 @@ td {
 .team_member_container .team_member:nth-child(6) {
   background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)),
     url("../images/trainer6.png");
+}
+
+/* footer styles */
+
+footer {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+footer > div {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 2.5rem;
+  margin: 2.5rem 0;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer > div p {
+  margin: 1.5rem 0;
+  max-width: 450px;
+}
+
+footer .footer_link_container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.footer_link_container a {
+  text-decoration: none;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+footer .copyright {
+  text-align: center;
+  font-size: 0.9rem;
+  letter-spacing: 0.1rem;
+  font-stretch: extra-expanded;
+  margin: 1.5rem;
+}
+
+hr {
+  border: 0.2px solid rgba(255, 255, 255, 0.1);
 }
