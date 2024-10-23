@@ -431,3 +431,18 @@ footer .copyright {
 hr {
   border: 0.2px solid rgba(255, 255, 255, 0.1);
 }
+
+.hidden {
+  display: none;
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    padding: 0.8rem 1rem;
+  }
+
+  footer > div {
+    text-align: center;
+    grid-template-columns: 1fr;
+  }
+}
