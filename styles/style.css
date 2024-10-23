@@ -436,9 +436,68 @@ hr {
   display: none;
 }
 
+@media screen and (min-width: 577px) and (max-width: 778px) {
+  .container {
+    padding: 0.8rem 1rem;
+  }
+
+  .banner {
+    flex-direction: column;
+  }
+
+  /* .banner_text .banner_title {
+    font-size: 3rem;
+  } */
+}
+
 @media screen and (max-width: 576px) {
   .container {
     padding: 0.8rem 1rem;
+  }
+
+  .btn {
+    font-size: 0.8rem;
+  }
+
+  .banner {
+    flex-direction: column;
+  }
+
+  .banner .banner_text,
+  .banner .banner_image {
+    width: 100%;
+    text-align: center;
+  }
+
+  .banner_text .banner_title {
+    font-size: 3rem;
+  }
+
+  .banner .banner_image {
+    margin-top: 4rem;
+    background-position: center;
+  }
+
+  .banner_image .blur_item {
+    padding: 0.7rem;
+    text-align: left;
+  }
+
+  .blur_item:first-child {
+    top: 10%;
+    right: 5%;
+  }
+
+  .blur_item:last-child {
+    top: 45%;
+    left: 8%;
+  }
+
+  .blur_item:first-child h2 {
+    font-size: 1.5rem;
+  }
+  .blur_item:last-child h3 {
+    font-size: 1.1rem;
   }
 
   footer > div {
