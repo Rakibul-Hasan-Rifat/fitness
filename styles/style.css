@@ -329,7 +329,6 @@ td {
 /* .meat_team_section styles */
 .meat_team {
   border-radius: 1.1rem;
-  /* padding: 1.5rem; */
   text-align: center;
 }
 
@@ -451,8 +450,8 @@ hr {
   }
 
   .habit_card img {
-  width: 75%;
-}
+    width: 75%;
+  }
 
   /* .banner_text .banner_title {
     font-size: 3rem;
@@ -514,9 +513,20 @@ hr {
     grid-template-columns: 1fr;
   }
 
-.habit_card img {
-  width: 60%;
-}
+  .habit_card img {
+    width: 60%;
+  }
+
+  .extra_miles {
+    margin: 3rem 1rem;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .extra_mile_text {
+    width: 95%;
+    align-items: center;
+  }
 
   footer > div {
     text-align: center;
